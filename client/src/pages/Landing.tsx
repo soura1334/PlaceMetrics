@@ -1,3 +1,4 @@
+import LeftHero from "../components/Landing/LeftHero";
 import DarkVeil from "../utils/DarkVeil";
 
 export default function Landing() {
@@ -22,8 +23,8 @@ export default function Landing() {
         </div>
       </nav>
       <div className="flex justify-center max-w-7xl mt-20 gap-5 px-6 py-4 mx-auto">
-        <div className="border border-white h-[70vh] w-[50vw]">hello</div>
-        <div className="border border-white h-[70vh] w-[50vw]">ok</div>
+        <LeftHero />
+        <div className="border border-white w-[50vw]">ok</div>
       </div>
     </div>
   );
