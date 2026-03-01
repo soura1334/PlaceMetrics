@@ -4,12 +4,13 @@ export default function Landing() {
   return (
     <div className="text-white box-border">
       <DarkVeil
-        hueShift={0}
+        hueShift={-20}
         noiseIntensity={0}
-        scanlineIntensity={0}
+        scanlineIntensity={0.7}
         speed={0.5}
         scanlineFrequency={0}
         warpAmount={0}
+        resolutionScale={1.25}
       />
       <nav className="sticky top-0 z-20 py-2 bg-gray-300/10 backdrop-blur-xl">
         <div className="flex justify-between px-6 py-4 mx-auto max-w-7xl">
