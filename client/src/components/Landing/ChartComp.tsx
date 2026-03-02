@@ -17,7 +17,7 @@ const data: dataComp[] = [
 
 export default function ChartComp() {
   return (
-    <div className="w-100 h-37.5 rounded-2xl p-6">
+    <div className="lg:w-100 w-70 h-37.5 rounded-2xl p-6">
       <ResponsiveContainer width="100%" height="80%">
         <AreaChart data={data}>
           <defs>

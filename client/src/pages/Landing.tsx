@@ -16,7 +16,7 @@ export default function Landing() {
         resolutionScale={1.25}
       />
       <Navbar />
-      <div className="flex justify-center max-w-7xl mt-20 gap-5 px-6 py-4 mx-auto">
+      <div className="flex flex-col lg:flex-row justify-center max-w-7xl mt-10 lg:mt-20 gap-5 px-6 py-4 mx-auto">
         <LeftHero />
         <RightHero />
       </div>

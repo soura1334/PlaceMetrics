@@ -3,25 +3,25 @@ import ChartComp from "./ChartComp";
 
 export default function RightHero() {
   return (
-    <div className="border border-transparent w-[50vw] my-2 rounded-2xl grid-rows-5 p-6 bg-linear-to-br from-purple-900/20 to-transparent backdrop-blur-xl">
+    <div className="border border-transparent my-2 rounded-2xl grid-rows-5 p-6 bg-linear-to-br from-purple-900/20 to-transparent backdrop-blur-xl">
       <div className="flex items-center gap-3 border-b border-white/10 pb-5">
-        <ChartColumn size={20} /> Dashboard
+        <ChartColumn className="h-4 lg:h-10" /> Dashboard
       </div>
       <div className="flex gap-4">
         <div className="w-[50%] mt-10 border border-white/10 rounded-xl p-5">
           <div className="flex justify-between items-center mb-4">
-            <Award size={20} />
+            <Award className="h-4 lg:h-10" />
             <p className="text-xs">+12.5%</p>
           </div>
-          <p className="text-2xl font-bold">92%</p>
+          <p className="text-lg lg:text-2xl font-bold">92%</p>
           <p className="text-xs">Placement Rate</p>
         </div>
         <div className="w-[50%] mt-10 border border-white/10 rounded-xl p-5">
           <div className="flex justify-between items-center mb-4">
-            <Users size={20} />
+            <Users className="h-4 lg:h-10"/>
             <p className="text-xs">+8.2%</p>
           </div>
-          <p className="text-2xl font-bold">1,248</p>
+          <p className="text-lg lg:text-2xl font-bold">1,248</p>
           <p className="text-xs">Active Students</p>
         </div>
       </div>
