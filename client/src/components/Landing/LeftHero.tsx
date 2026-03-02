@@ -1,4 +1,5 @@
-import { Activity, ArrowRight, Check } from "lucide-react";
+import { Activity, ArrowRight} from "lucide-react";
+import Bullet from "./Bullet";
 
 export default function LeftHero() {
   return (
@@ -32,12 +33,8 @@ export default function LeftHero() {
       </div>
       {/* Text */}
       <div className="flex gap-6 mt-5 text-white/50 text-xs lg:text-sm">
-        <div className="flex items-center gap-2">
-          <Check className="h-4 lg:h-10"  /> No credit card required
-        </div>
-        <div className="flex items-center gap-2">
-          <Check className="h-4 lg:h-10" /> 14 day free trial
-        </div>
+        <Bullet title="No credit card required" />
+        <Bullet title="14 day free trial"/>
       </div>
     </div>
   );
