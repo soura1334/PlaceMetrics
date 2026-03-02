@@ -22,15 +22,16 @@ export default function LeftHero() {
         campus placements with real-time insights and lifecycle management.
       </div>
       {/* Buttons */}
-      <div className="lg:text-lg text-xs flex gap-6 mt-8">
-        <button className="rounded-lg bg-linear-to-r from-teal-400 to-cyan-500 text-black font-semibold shadow-lg px-2 py-2 lg:px-6 lg:py-3 flex items-center gap-2">
+      <div className="lg:text-sm text-xs flex gap-6 mt-8">
+        <button className="rounded-lg bg-linear-to-r from-teal-400 to-cyan-500 text-black font-semibold shadow-lg p-2 lg:px-4 flex items-center gap-2">
           Start Free Trial <ArrowRight className="h-4 lg:h-10" />
         </button>
-        <button className="border-2 border-teal-400/40 rounded-lg text-teal-400 bg-white/10 px-2 py-2 lg:px-6 lg:py-3">
+        <button className="border-2 border-teal-400/40 rounded-lg text-teal-400 bg-white/10 p-2 lg:px-4 ">
           View Demo
         </button>
       </div>
-      <div className="flex gap-6 mt-8 text-white/50 text-xs lg:text-sm">
+      {/* Text */}
+      <div className="flex gap-6 mt-5 text-white/50 text-xs lg:text-sm">
         <div className="flex items-center gap-2">
           <Check className="h-4 lg:h-10"  /> No credit card required
         </div>
