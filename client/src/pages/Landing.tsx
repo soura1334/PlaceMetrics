@@ -1,25 +1,12 @@
-import LeftHero from "../components/Landing/LeftHero";
-import RightHero from "../components/Landing/RightHero";
+import HeroWrapper from "../components/Landing/HeroWrapper";
+import LandingWrapper from "../components/Landing/LandingWrapper";
 import Navbar from "../components/Navbar";
-import DarkVeil from "../utils/DarkVeil";
 
 export default function Landing() {
   return (
-    <div className="text-white box-border">
-      <DarkVeil
-        hueShift={-20}
-        noiseIntensity={0}
-        scanlineIntensity={0.7}
-        speed={0.5}
-        scanlineFrequency={0}
-        warpAmount={0}
-        resolutionScale={1.25}
-      />
+    <LandingWrapper>
       <Navbar />
-      <div className="flex flex-col lg:flex-row justify-center max-w-7xl mt-10 lg:mt-20 gap-5 px-6 py-4 mx-auto">
-        <LeftHero />
-        <RightHero />
-      </div>
-    </div>
+      <HeroWrapper />
+    </LandingWrapper>
   );
 }
