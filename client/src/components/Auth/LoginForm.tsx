@@ -23,7 +23,7 @@ export default function LoginForm() {
 
   return (
     <form
-      className="flex flex-col bg-black/40 backdrop-blur-md max-w-md mx-auto border border-white/20 rounded-xl p-8 my-8"
+      className="flex flex-col bg-white/5 backdrop-blur-2xl max-w-md mx-auto border border-white/20 rounded-xl p-8 my-8"
       onSubmit={handleSubmit(onSubmit)}
     >
       <Input
@@ -59,7 +59,7 @@ export default function LoginForm() {
       {errors.password && <Error message={errors.password.message} />}
       <button
         disabled={!isValid}
-        className="my-5 p-2 w-fit self-center rounded-lg transition bg-teal-400 text-black hover:bg-teal-300 disabled:bg-white/15 disabled:text-teal-400 disabled:cursor-not-allowed disabled:opacity-50"
+        className="my-5 p-2 px-4 w-fit self-center rounded-lg transition bg-teal-400 text-black hover:bg-teal-300 disabled:bg-white/15 disabled:text-teal-400 disabled:cursor-not-allowed disabled:opacity-50"
       >
         Sign In
       </button>

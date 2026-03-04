@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <LandingWrapper>
       <div className="text-center">
-        <div className="justify-self-center my-8 bg-black/40 p-2 rounded-lg">
+        <div className="justify-self-center my-8 bg-white/5 p-2 rounded-lg">
           <TrendingUp size={40} />
         </div>
         <p className="text-5xl font-bold">Welcome Back</p>

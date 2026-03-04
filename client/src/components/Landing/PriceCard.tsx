@@ -19,7 +19,7 @@ export default function PriceCard({
   children,
 }: Props) {
   return (
-    <div className="border border-transparent w-100  py-5 px-10 rounded-xl flex-col flex gap-8  bg-white/10">
+    <div className="border border-transparent w-100  py-5 px-10 rounded-xl flex-col flex gap-8 backdrop-blur-md bg-white/10">
       {children}
       <p className="text-xl">{planName}</p>
       <p className="text-md">{forWho}</p>

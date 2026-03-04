@@ -3,7 +3,7 @@ import ChartComp from "./ChartComp";
 
 export default function RightHero() {
   return (
-    <div className="border border-transparent my-2 rounded-2xl grid-rows-5 p-6 bg-linear-to-br from-purple-900/20 to-transparent backdrop-blur-xl">
+    <div className="border border-transparent my-2 rounded-2xl grid-rows-5 p-6 bg-white/5 backdrop-blur-md">
       <div className="flex items-center gap-3 border-b border-white/10 pb-5">
         <ChartColumn className="h-4 lg:h-10" /> Dashboard
       </div>
