@@ -9,10 +9,10 @@ export default function LandingWrapper({ children }: Props) {
         hueShift={-20}
         noiseIntensity={0}
         scanlineIntensity={0.7}
-        speed={0.5}
+        speed={0.4}
         scanlineFrequency={0}
         warpAmount={0}
-        resolutionScale={1.25}
+        resolutionScale={1}
       />
       {children}
     </div>

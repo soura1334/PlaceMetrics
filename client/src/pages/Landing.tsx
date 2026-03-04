@@ -1,20 +1,25 @@
 import HeroWrapper from "../components/Landing/HeroWrapper";
 import LandingWrapper from "../components/Landing/LandingWrapper";
 import Navbar from "../components/Navbar";
-import Features from "../components/Landing/Features"
-import Pricing from "../components/Landing/Pricing";
-import CTASection from "../components/Landing/CTASection";
-import Footer from "../components/Footer";
+
+import { lazy, Suspense } from "react";
+
+const Features = lazy(() => import("../components/Landing/Features"));
+const Pricing = lazy(() => import("../components/Landing/Pricing"));
+const CTASection = lazy(()=> import("../components/Landing/CTASection"));
+const Footer = lazy(() => import("../components/Footer"));
 
 export default function Landing() {
   return (
     <LandingWrapper>
       <Navbar />
       <HeroWrapper />
-      <Features />
-      <Pricing />
-      <CTASection />
-      <Footer />
+      <Suspense>
+        <Features />
+        <Pricing />
+        <CTASection />
+        <Footer />
+      </Suspense>
     </LandingWrapper>
   );
 }

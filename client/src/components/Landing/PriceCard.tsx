@@ -28,8 +28,8 @@ export default function PriceCard({
         <span className="text-white/60">/year</span>
       </div>
       <div>
-        {bullets.map((el) => (
-          <Bullet title={el} />
+        {bullets.map((el, idx) => (
+          <Bullet title={el} key={idx} />
         ))}
       </div>
       <button className="border bg-black/20 rounded-lg w-fit self-center px-20 py-2">

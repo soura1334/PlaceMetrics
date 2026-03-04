@@ -28,7 +28,7 @@ export default function Pricing() {
           ]}
           btnText="Get Started"
         >
-          <p className="text-teal-300 border border-teal-400/20 px-3 py-1 text-sm font-medium rounded-xl w-fit">Most Popular</p>
+          <p className="text-teal-300 bg-black/40 border border-teal-400/20 px-3 py-1 text-sm font-medium rounded-xl w-fit">Most Popular</p>
         </PriceCard>
         <PriceCard
           planName="Enterprise"
