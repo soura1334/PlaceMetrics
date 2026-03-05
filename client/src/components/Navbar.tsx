@@ -15,7 +15,7 @@ export default function Navbar() {
         </div>
         <ul className="flex items-center justify-end gap-10">
           <Link to="/login">Login</Link>
-          <li>Get Started</li>
+          <Link to="/register">Get Started</Link>
           <ThemeToggle />
         </ul>
       </div>
