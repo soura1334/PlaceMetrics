@@ -23,7 +23,7 @@ export default function LoginForm() {
 
   return (
     <form
-      className="flex flex-col bg-white/5 backdrop-blur-2xl max-w-md mx-auto border border-white/20 rounded-xl p-8 my-8"
+      className="flex flex-col text-black dark:text-white bg-gray-500/20 dark:bg-white/5 backdrop-blur-2xl w-fit lg:w-auto lg:max-w-md mx-auto border border-black/20 dark:border-white/20 rounded-xl p-5 lg:p-8 my-8"
       onSubmit={handleSubmit(onSubmit)}
     >
       <Input
@@ -55,16 +55,16 @@ export default function LoginForm() {
           },
         }}
       />
-      <Link to="" className="text-sm text-gray-400">Forgot Password?</Link>
       {errors.password && <Error message={errors.password.message} />}
+      <Link to="" className="text-xs lg:text-sm text-gray-600 dark:text-gray-400">Forgot Password?</Link>
       <button
         disabled={!isValid}
-        className="my-5 p-2 px-4 w-fit self-center rounded-lg transition bg-teal-400 text-black hover:bg-teal-300 disabled:bg-white/15 disabled:text-teal-400 disabled:cursor-not-allowed disabled:opacity-50"
+        className="my-5 py-2 px-3 lg:px-4 w-fit lg:text-md text-sm self-center rounded-lg transition bg-teal-400 text-black hover:bg-teal-300 disabled:bg-black/15 dark:disabled:bg-white/15 disabled:text-black/50 dark:disabled:text-teal-400 disabled:cursor-not-allowed disabled:opacity-50"
       >
         Sign In
       </button>
-      <div className="border-t border-white/20 text-center my-5 py-5">
-        <span className="text-white/50">Don't have an account? </span>
+      <div className="border-t border-black/20 dark:border-white/20 text-xs lg:text-md text-center my-5 py-5">
+        <span className="text-black/50 dark:text-white/50">Don't have an account? </span>
         <Link className="text-teal-400" to="/">Register here</Link>
       </div>
     </form>
