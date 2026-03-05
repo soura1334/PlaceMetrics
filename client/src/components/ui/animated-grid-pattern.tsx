@@ -99,7 +99,7 @@ export function AnimatedGridPattern({
       ref={containerRef}
       aria-hidden="true"
       className={cn(
-        "pointer-events-none absolute inset-0 h-full w-full fill-gray-400/10 stroke-gray-400/10",
+        "pointer-events-none absolute inset-0 h-full w-full stroke-gray-300/40 text-gray-900 dark:text-gray-400 dark:stroke-gray-400/10",
         className,
       )}
       {...props}

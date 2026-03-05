@@ -3,12 +3,12 @@ import PriceCard from "./PriceCard";
 export default function Pricing() {
   return (
     <>
-      <div className="text-center mt-20">
-        <p className="text-4xl font-bold">Simple, transparent pricing</p>
-        <p className="mt-4">Choose the plan that fits your institution</p>
+      <div className="text-center text-black dark:text-white mt-20">
+        <p className="text-2xl lg:text-4xl font-bold">Simple, transparent pricing</p>
+        <p className="lg:text-lg text-sm mt-4">Choose the plan that fits your institution</p>
       </div>
 
-      <div className="flex justify-center gap-8 my-10">
+      <div className="flex flex-col text-black dark:text-white lg:h-140 items-center lg:items-start lg:flex-row lg:justify-center gap-5 lg:gap-8 mx-10 my-10">
         <PriceCard
           planName="Starter"
           forWho="For small colleges"
@@ -28,7 +28,7 @@ export default function Pricing() {
           ]}
           btnText="Get Started"
         >
-          <p className="text-teal-300 bg-black/40 border border-teal-400/20 px-3 py-1 text-sm font-medium rounded-xl w-fit">Most Popular</p>
+          <p className="text-teal-300 bg-white/80 dark:bg-black/40 border border-teal-400/20 px-3 py-1 text-sm font-medium rounded-xl w-fit">Most Popular</p>
         </PriceCard>
         <PriceCard
           planName="Enterprise"

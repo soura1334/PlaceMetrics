@@ -7,7 +7,7 @@ type Props = {
   price: string;
   bullets: string[];
   btnText: string;
-  children?: ReactNode ;
+  children?: ReactNode;
 };
 
 export default function PriceCard({
@@ -19,22 +19,28 @@ export default function PriceCard({
   children,
 }: Props) {
   return (
-    <div className="border border-transparent w-100  py-5 px-10 rounded-xl flex-col flex gap-8 backdrop-blur-md bg-white/10">
+    <div className="border h-full w-full border-transparent lg:w-100 py-8 px-10 rounded-xl flex-col flex gap-8 backdrop-blur-md bg-black/10 dark:bg-white/10">
       {children}
-      <p className="text-xl">{planName}</p>
-      <p className="text-md">{forWho}</p>
+      <p className="text-lg lg:text-xl">{planName}</p>
+      <p className="text-sm lg:text-md">{forWho}</p>
       <div>
-        <span className="text-4xl font-extrabold">{price}</span>
-        <span className="text-white/60">/year</span>
+        <span className="text-2xl lg:text-4xl font-extrabold">{price}</span>
+        <span className="text-sm lg:text-md text-black/60 dark:text-white/60">/year</span>
       </div>
       <div>
         {bullets.map((el, idx) => (
           <Bullet title={el} key={idx} />
         ))}
       </div>
-      <button className="border bg-black/20 rounded-lg w-fit self-center px-20 py-2">
-        {btnText}
-      </button>
+      {planName == "Professional" ? (
+        <button className="border bg-teal-400 text-black lg:text-md text-sm rounded-lg w-fit self-center px-10 lg:px-20 py-2">
+          {btnText}
+        </button>
+      ) : (
+        <button className="border bg-white/80 dark:bg-black/20 lg:text-md text-sm rounded-lg w-fit self-center px-10 lg:px-20 py-2">
+          {btnText}
+        </button>
+      )}
     </div>
   );
 }

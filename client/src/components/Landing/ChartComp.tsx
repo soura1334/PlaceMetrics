@@ -18,7 +18,7 @@ const data: dataComp[] = [
 export default function ChartComp() {
   return (
     <div className="lg:w-100 w-70 h-37.5 rounded-2xl p-6">
-      <ResponsiveContainer width="100%" height="80%">
+      <ResponsiveContainer width="100%" height="80%" minHeight={1} minWidth={1}>
         <AreaChart data={data}>
           <defs>
             <linearGradient id="colorGradient" x1="0" y1="0" x2="1" y2="0">

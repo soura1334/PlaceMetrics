@@ -4,7 +4,7 @@ import Card from "./Card";
 export default function Features() {
   return (
     <>
-      <div className="text-center mt-30">
+      <div className="text-center text-black dark:text-white mt-30">
         <p className="lg:text-4xl text-2xl p-2 lg:p-0 font-bold">
           Everything you need to manage placements
         </p>
@@ -12,7 +12,7 @@ export default function Features() {
           Powerful features designed for modern placement cells
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center px-6 mt-8 py-4 gap-8">
+      <div className="flex flex-col text-black dark:text-white lg:flex-row justify-center px-6 mt-8 py-4 gap-8">
         <Card
           title="Advanced Analytics"
           tagline="Turn data into decisions."
