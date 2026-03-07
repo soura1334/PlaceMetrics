@@ -3,7 +3,8 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import { ThemeProvider } from "./components/ThemeProvider";
 import Register from "./pages/Register";
-import AdminDashboard from "./pages/AdminDashboard";
+import DashboardLayout from "./layouts/DashboardLayout";
+import AdminOverview from "./pages/admin/AdminOverview";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin" element={<DashboardLayout />}>
+            <Route index element={<AdminOverview />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
