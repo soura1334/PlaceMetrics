@@ -7,7 +7,7 @@ type AdminCardProps = {
 
 export default function AdminCard({title, children}: AdminCardProps) {
   return (
-    <div className="p-6 space-y-4 border rounded-lg">
+    <div className="p-6 flex flex-col justify-between h-120 border rounded-lg">
       <p className="text-lg font-semibold">{title}</p>
       {children}
     </div>

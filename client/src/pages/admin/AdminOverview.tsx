@@ -1,9 +1,11 @@
 import AdminCard from "@/components/Dashboard/admin/Overview/AdminCard";
+import CompaniesGraph from "@/components/Dashboard/admin/Overview/CompaniesGraph";
 import DepartmentGraph from "@/components/Dashboard/admin/Overview/DepartmentGraph";
 import PlacementGraph from "@/components/Dashboard/admin/Overview/PlacementGraph";
 import StatCard, {
   type CardProps,
 } from "@/components/Dashboard/admin/Overview/StatCard";
+import StatDiv from "@/components/Dashboard/admin/Overview/StatDiv";
 import { Award, Building2, IndianRupee, TrendingUp, Users } from "lucide-react";
 
 const stats: CardProps[] = [
@@ -64,10 +66,14 @@ export default function AdminOverview() {
             <DepartmentGraph />
           </AdminCard>
           <AdminCard title="Company Hiring Distribution">
-            <DepartmentGraph />
+            <CompaniesGraph />
           </AdminCard>
           <AdminCard title="Quick Stats">
-            <div></div>
+            <div>
+              <StatDiv label="Active Drives" value="24" icon={<Building2 />} />
+              <StatDiv label="Applications This Month" value="1247" icon={<TrendingUp />} />
+              <StatDiv label="Offers Extended" value="389" icon={<Award />} />
+            </div>
           </AdminCard>
         </div>
       </div>
