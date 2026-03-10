@@ -5,6 +5,7 @@ import { ThemeProvider } from "./components/ThemeProvider";
 import Register from "./pages/Register";
 import DashboardLayout from "./layouts/DashboardLayout";
 import AdminOverview from "./pages/admin/AdminOverview";
+import PlacementAnalytics from "./pages/admin/PlacementAnalytics";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/admin" element={<DashboardLayout />}>
             <Route index element={<AdminOverview />} />
+            <Route path="analytics" element={<PlacementAnalytics />} />
           </Route>
         </Routes>
       </BrowserRouter>
