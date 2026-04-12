@@ -1,5 +1,6 @@
 import AnalyticsCard from "@/components/Dashboard/admin/Placement Analytics/AnalyticsCard";
 import ChartContainer from "@/components/Dashboard/admin/Placement Analytics/ChartContainer";
+import DeptGraph from "@/components/Dashboard/admin/Placement Analytics/DeptGraph";
 
 export default function PlacementAnalytics() {
   return (
@@ -17,10 +18,18 @@ export default function PlacementAnalytics() {
             <AnalyticsCard label="Companies Visited" value="87" subtext="+8 new this year" />
         </div>
         <div className="grid grid-cols-2 justify-items-center mt-10 gap-10">
-          <ChartContainer />
-          <ChartContainer />
-          <ChartContainer />
-          <ChartContainer />
+          <ChartContainer>
+            <DeptGraph />
+          </ChartContainer>
+          <ChartContainer>
+            <DeptGraph />
+          </ChartContainer>
+          <ChartContainer>
+            <DeptGraph />
+          </ChartContainer>
+          <ChartContainer>
+            <DeptGraph />
+          </ChartContainer>
         </div>
       </div>
     </div>
