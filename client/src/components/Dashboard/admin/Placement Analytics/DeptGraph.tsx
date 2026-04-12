@@ -2,7 +2,6 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
-  Legend,
   Rectangle,
   Tooltip,
   XAxis,
