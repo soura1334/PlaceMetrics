@@ -33,7 +33,7 @@ const colors = [
   "#EF4444",
 ];
 
-type CustomBarProps = {
+export type CustomBarProps = {
   x?: number;
   y?: number;
   width?: number;
@@ -42,7 +42,7 @@ type CustomBarProps = {
   index?: number;
 };
 
-const CustomBar = (props: CustomBarProps) => {
+function CustomBar (props: CustomBarProps) {
   const { x = 0, y = 0, width = 0, height = 0, index = 0 } = props;
 
   return (
@@ -52,7 +52,7 @@ const CustomBar = (props: CustomBarProps) => {
       width={width}
       height={height}
       fill={colors[index % colors.length]}
-      radius={[6, 6, 0, 0]} // rounded top corners 🔥
+      radius={[6, 6, 0, 0]} 
     />
   );
 };

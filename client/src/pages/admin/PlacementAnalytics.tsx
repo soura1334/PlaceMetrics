@@ -1,6 +1,10 @@
 import AnalyticsCard from "@/components/Dashboard/admin/Placement Analytics/AnalyticsCard";
 import ChartContainer from "@/components/Dashboard/admin/Placement Analytics/ChartContainer";
 import DeptGraph from "@/components/Dashboard/admin/Placement Analytics/DeptGraph";
+import HiringFunnel from "@/components/Dashboard/admin/Placement Analytics/HiringFunnel";
+import HiringGraph from "@/components/Dashboard/admin/Placement Analytics/HiringGraph";
+import SalDist from "@/components/Dashboard/admin/Placement Analytics/SalDist";
+import TrendGraph from "@/components/Dashboard/admin/Placement Analytics/TrendGraph";
 
 export default function PlacementAnalytics() {
   return (
@@ -18,18 +22,21 @@ export default function PlacementAnalytics() {
             <AnalyticsCard label="Companies Visited" value="87" subtext="+8 new this year" />
         </div>
         <div className="grid grid-cols-2 justify-items-center mt-10 gap-10">
-          <ChartContainer>
+          <ChartContainer heading="Placement % by Branch" subHeading="Department-wise placement success rate">
             <DeptGraph />
           </ChartContainer>
-          <ChartContainer>
-            <DeptGraph />
+          <ChartContainer heading="Salary Distribution" subHeading="Number of students per salary range">
+            <SalDist />
           </ChartContainer>
-          <ChartContainer>
-            <DeptGraph />
+          <ChartContainer heading="Companies Hiring Count" subHeading="Top companies by number of students hired">
+            <HiringGraph />
           </ChartContainer>
-          <ChartContainer>
-            <DeptGraph />
+          <ChartContainer heading="Placement Trend by Year" subHeading="Year-over-year placement growth">
+            <TrendGraph />
           </ChartContainer>
+        </div>
+        <div>
+          <HiringFunnel />
         </div>
       </div>
     </div>

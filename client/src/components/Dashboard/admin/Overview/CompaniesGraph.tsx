@@ -16,12 +16,13 @@ const companyHiringDistribution = [
 
 const COLORS = ["#10B981", "#3B82F6", "#06B6D4", "#8B5CF6"];
 
-type PieLabelProps = {
+export type PieLabelProps = {
   x?: number;
   y?: number;
   name?: string;
   value?: number;
   index?: number;
+  
   textAnchor?: "start" | "middle" | "end";
   dominantBaseline?: "auto" | "middle" | "central" | "hanging";
 };
