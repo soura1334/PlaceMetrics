@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import DashboardLayout from "./layouts/DashboardLayout";
 import AdminOverview from "./pages/admin/AdminOverview";
 import PlacementAnalytics from "./pages/admin/PlacementAnalytics";
+import CompanyManagement from "./pages/admin/CompanyManagement";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/admin" element={<DashboardLayout />}>
             <Route index element={<AdminOverview />} />
             <Route path="analytics" element={<PlacementAnalytics />} />
+            <Route path="companies" element={<CompanyManagement />} />
           </Route>
         </Routes>
       </BrowserRouter>

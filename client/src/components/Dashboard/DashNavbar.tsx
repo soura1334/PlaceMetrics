@@ -1,4 +1,4 @@
-import { Search, User } from "lucide-react";
+import { User } from "lucide-react";
 
 import {
   Select,
@@ -13,6 +13,7 @@ import { ThemeToggle } from "../ThemeToggle";
 import NotificationBell, { Dropdown } from "./NotificationBell";
 import { useState } from "react";
 import SettingsDialog from "./SettingsDialog";
+import SearchBar from "./SearchBar";
 
 export default function DashNav() {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -51,10 +52,7 @@ export default function DashNav() {
             </SelectContent>
           </Select>
         </div>
-        <div className="relative flex grow max-w-xs items-center text-sm gap-3 border rounded-md">
-          <Search className="absolute left-2 w-4 h-4" />
-          <input className="h-full w-full py-2 pl-8" placeholder="Search companies..." />
-        </div>
+        <SearchBar classStyle={true} />
         <ThemeToggle />
         <div className="relative">
           <NotificationBell handleClick={handleNoti} />

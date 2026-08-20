@@ -11,7 +11,7 @@ export default function Sidebar() {
         <div className="grow border-b p-4 pb-8 flex w-full gap-5 items-start justify-center flex-col">
           <Link to="/admin">Overview</Link>
           <Link to="analytics">Placement Analytics</Link>
-          <button>Companies</button>
+          <Link to="companies">Companies</Link>
           <button>Branch Statistics</button>
           <button>Job Roles</button>
           <button>Application Tracking</button>
