@@ -90,7 +90,7 @@ export default function CompanyTable() {
         </tr>
       </thead>
       <tbody>
-        {companies.map((data, idx) => {
+        {companies.map((data) => {
           return (
             <tr key={data.id}>
               <TableCell text={data.logo + " " + data.name} />
