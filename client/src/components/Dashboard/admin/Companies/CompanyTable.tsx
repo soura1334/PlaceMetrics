@@ -93,11 +93,11 @@ export default function CompanyTable() {
         {companies.map((data) => {
           return (
             <tr key={data.id}>
-              <TableCell text={data.logo + " " + data.name} />
-              <TableCell text={data.sector} />
-              <TableCell text={data.type}/>
-              <TableCell text={data.totalOffers.toString()} />
-              <TableCell>
+              <TableCell isType={false} text={data.logo + " " + data.name} />
+              <TableCell isType={false} text={data.sector} />
+              <TableCell isType={true} text={data.type}/>
+              <TableCell isType={false} text={data.totalOffers.toString()} />
+              <TableCell isType={false}>
                 <button className="mr-10">Edit</button>
                 <button >View Details</button>
               </TableCell>
