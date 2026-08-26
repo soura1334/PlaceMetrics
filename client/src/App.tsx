@@ -7,6 +7,7 @@ import DashboardLayout from "./layouts/DashboardLayout";
 import AdminOverview from "./pages/admin/AdminOverview";
 import PlacementAnalytics from "./pages/admin/PlacementAnalytics";
 import CompanyManagement from "./pages/admin/CompanyManagement";
+import BranchStatistics from "./pages/admin/BranchStatistics";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route index element={<AdminOverview />} />
             <Route path="analytics" element={<PlacementAnalytics />} />
             <Route path="companies" element={<CompanyManagement />} />
+            <Route path="branches" element={<BranchStatistics />} />
           </Route>
         </Routes>
       </BrowserRouter>

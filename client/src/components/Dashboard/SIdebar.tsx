@@ -12,7 +12,7 @@ export default function Sidebar() {
           <Link to="/admin">Overview</Link>
           <Link to="analytics">Placement Analytics</Link>
           <Link to="companies">Companies</Link>
-          <button>Branch Statistics</button>
+          <Link to="branches">Branch Statistics</Link>
           <button>Job Roles</button>
           <button>Application Tracking</button>
           <button>Students</button>

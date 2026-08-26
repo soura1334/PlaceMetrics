@@ -42,7 +42,7 @@ export type CustomBarProps = {
   index?: number;
 };
 
-function CustomBar (props: CustomBarProps) {
+export function CustomBar (props: CustomBarProps) {
   const { x = 0, y = 0, width = 0, height = 0, index = 0 } = props;
 
   return (
